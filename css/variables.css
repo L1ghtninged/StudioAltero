@@ -1,0 +1,143 @@
+:root {
+    --color-white: #ffffff;
+    
+    --color-bg-light: #faf4f5;      
+    --color-bg-subtle: #f7edee;    
+    --color-pink-light: #f5eaec;
+
+    --color-gray-light: #e8e2e3;    
+    --color-gray-medium: #665e60;   
+    --color-gray-dark: #2a2425;     
+
+    --color-pink-primary: #d896a2;  
+    --color-pink-hover: #c4808c;
+
+    --font-primary: 'Playfair Display', 'Georgia', serif; 
+    --font-secondary: 'Montserrat', 'Arial', sans-serif;
+    --transition-fast: all 0.3s ease;
+    --max-width: 1200px;
+}
+
+/* Nastavení celkového pozadí stránky */
+body {
+    font-family: var(--font-secondary);
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--color-gray-medium);
+    background-color: var(--color-bg-light); /* Celé pozadí webu dostane růžový nádech */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-fast);
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--font-primary);
+    color: var(--color-gray-dark);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+section {
+    padding: 5rem 2rem;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+section h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: var(--color-pink-primary);
+    margin: 1rem auto 2rem auto;
+}
+
+.section-subtitle {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+    font-style: italic;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+/* Tlačítka - Základní / Společný styl */
+.btn-primary, 
+.btn-secondary {
+    display: inline-block;
+    padding: 0.85rem 1.8rem;
+    font-family: var(--font-secondary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 30px; /* Modernější pilulkový/zaoblený tvar */
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    text-align: center;
+}
+
+/* Primární tlačítko */
+.btn-primary {
+    background-color: var(--color-pink-primary);
+    border: 2px solid var(--color-pink-primary);
+    color: var(--color-white);
+    box-shadow: 0 4px 12px rgba(216, 150, 162, 0.25);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-pink-hover);
+    border-color: var(--color-pink-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(216, 150, 162, 0.35);
+}
+
+/* Sekundární tlačítko */
+.btn-secondary {
+    background-color: transparent;
+    color: var(--color-gray-dark);
+    border: 2px solid var(--color-gray-dark);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-gray-dark);
+    color: var(--color-white);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(42, 36, 37, 0.15);
+}
+
+/* Malé tlačítko na kartě týmu */
+.btn-small {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.75rem;
+    margin-top: 1rem;
+}

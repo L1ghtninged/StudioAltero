@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/dental.css">
+
+    <link rel="icon" type="image/jpg" href="assets/images/logos/logo.jpg">
+
+    <title>Studio Altero | Dentální hygiena</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <a href="#hero">
+                <img src="assets/images/logos/logo.jpg" alt="Logo Studio Altero" class="logo-img">
+                <span>Altero</span>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Rozcestník</a></li>
+                <li><a href="#o-nas">O ordinaci</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li class="nav-hair"><a href="kadernictvi.html">Salon krásy & Péče</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <div class="header-socials">
+                <a href="https://www.instagram.com/studio_altero" target="_blank" rel="noopener" title="Instagram">
+                    <img src="assets/images/logos/instagram-logo.svg" alt="Instagram" class="social-icon">
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100063807061157&locale=cs_CZ" target="_blank"
+                    rel="noopener" title="Facebook">
+                    <img src="assets/images/logos/facebook-logo.svg" alt="Facebook" class="social-icon">
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="dental-hero">
+            <div class="hero-content">
+                <h1>Dentální hygiena pro váš zdravý úsměv</h1>
+                <p>Šetrná preventivní péče, pískování i bělení zubů v moderním prostředí.</p>
+                <div class="hero-buttons">
+                    <a href="#kontakt" class="btn-primary btn-dental">Jak se objednat</a>
+                    <a href="#cenik" class="btn-secondary">Online rezervace</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="assets/images/salon/placeholder.jpg" alt="Ordinace dentální hygieny Altero">
+            </div>
+        </section>
+
+        <section id="o-nas">
+            <h2>O naší ordinaci</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>Nabízíme profesionální a bezbolestnou péči o vaše zuby a dásně. Zaměřujeme se na prevenci, odstranění zubního kamene i instruktáž správného čistění.</p>
+                </div>
+
+                <div class="opening-hours">
+                    <h3>Otevírací doba</h3>
+                    <ul>
+                        <li><span>Pondělí – Sobota:</span> <span>07:00 – 20:00</span></li>
+                        <li><span>Neděle:</span> <span>Zavřeno</span></li>
+                    </ul>
+                    <p class="note">* Dle předchozích objednávek.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galerie">
+            <h2>Galerie ordinace</h2>
+            <p class="section-subtitle">Prohlédněte si prostředí naší ordinace.</p>
+
+            <div class="gallery-grid" id="galleryContainer"></div>
+
+            <div class="gallery-actions">
+                <button id="loadMoreBtn" class="btn-secondary">Zobrazit další</button>
+            </div>
+        </section>
+
+        <section id="cenik">
+            <div class="reservation-box">
+                <h3>Online rezervace termínu</h3>
+                <p>Vyberte si vyhovující termín v rezervačním systému XDENT.</p>
+                <a href="https://www.xdent.cz" target="_blank" rel="noopener" class="btn-primary btn-dental">Rezervovat přes XDENT</a>
+            </div>
+        </section>
+
+        <section id="kontakt">
+            <h2>Kde nás najdete?</h2>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Kontakt</h3>
+                    <p class="address">
+                        <strong>Studio Altero</strong><br>
+                        Topolová 2571/13<br>
+                        106 00 Praha 10 – Záběhlice
+                    </p>
+
+                    <p class="phone">
+                        <strong>Rezervace:</strong> <a href="tel:+420608164423">+420 608 164 423</a>
+                    </p>
+
+                    <div class="social-links">
+                        <h4>Sledujte nás:</h4>
+                        <a href="https://www.facebook.com/profile.php?id=100063807061157&locale=cs_CZ" target="_blank"
+                            rel="noopener">Facebook</a>
+                        <a href="https://www.instagram.com/studio_altero" target="_blank" rel="noopener">Instagram</a>
+                    </div>
+
+                    <!-- QR Kód pro Google recenze -->
+                    <div class="review-qr">
+                        <h4>Napište nám recenzi</h4>
+                        <img src="assets/images/qr-code.png" alt="QR kód pro Google recenze" class="qr-code-img" />
+                        <p><small>Podělte se o zkušenost na Google</small></p>
+                    </div>
+                </div>
+
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2561.562696760946!2d14.505213713108414!3d50.057022771400966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b9255b19de1b1%3A0x800b5afb4dc387a3!2zQ8OtbCAtIE7DoWt1cG7DrSBTdMWZZWRpc2tvIFphaHJhZG7DrSBNxJtzdG8!5e0!3m2!1scs!2scz!4v1785939487492!5m2!1scs!2scz"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 Studio Altero. Všechna práva vyhrazena.</p>
+        </div>
+    </footer>
+    <script src="js/dental_gallery.js"></script>
+</body>
+
+</html>
