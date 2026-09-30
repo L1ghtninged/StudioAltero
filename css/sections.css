@@ -161,10 +161,13 @@
 
 .price-category table tr {
     border-bottom: 1px dashed var(--color-gray-light);
+    display: table-row;
 }
 
 .price-category table td {
-    padding: 1rem 0;
+    padding: 0.9rem 0.5rem;
+    font-size: 0.95rem;
+    vertical-align: middle;
 }
 
 .price-category table td.price {
